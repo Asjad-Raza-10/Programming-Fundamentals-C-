@@ -1,19 +1,13 @@
-
+#include "stdafx.h"
 #include <iostream>
+
 using namespace std;
-int main() {
 
-	float miles=0.0, gallons=0.0, mileage=0.0;
-	
-	cout << "Enter the number of miles travelled: \t";
-	cin >> miles;
+int main()
+{
 
-	cout << endl << "Enter the number of gallons filled: \t";
-	cin >> gallons;
+	cout << "Hello World!" << endl;
 
-	mileage = miles / gallons;
-
-	cout << endl << "Your car's mileage is: \t\t\t" << mileage << " miles per gallons" << endl << endl;
-
+	system("pause");
 	return 0;
 }

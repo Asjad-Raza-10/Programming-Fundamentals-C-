@@ -1,30 +1,29 @@
+#include "stdafx.h"
 #include <iostream>
+
 using namespace std;
 
-int main() 
+int main()
 {
-    float rate = 0.0, svcCharge = 0.0, telCharge = 0.0, roomCharge = 0.0, total = 0.0;
-    int nights = 0;
+	int a = 0, b = 0, c = 0, sum = 0;
+	float avg = 0;
 
-    cout << "Enter the per-night rate for the room: $";
-    cin >> rate;
+	cout << "Enter first number:" << endl;
+	cin >> a;
 
-    cout << "Enter the number of nights stayed: ";
-    cin >> nights;
+	cout << "Enter second number:" << endl;
+	cin >> b;
 
-    cout << "Enter the room service charge (enter 0 if no charge): $";
-    cin >> svcCharge;
+	cout << "Enter third number:" << endl;
+	cin >> c;
 
-    cout << "Enter the telephone charge (enter 0 if no charge): $";
-    cin >> telCharge;
+	sum = a + b + c;
+	avg = (float)sum / 3;
 
-    roomCharge = rate * nights;
-    total = roomCharge + svcCharge + telCharge;
+	cout << "The sum of " << a << ", " << b << " and " << c << " = " << sum << endl;
+	cout << "The average of " << a << ", " << b << " and " << c << " = " << avg << endl;
 
-    cout << "Room charge for " << nights << " nights: $" << roomCharge << endl;
-    cout << "Room service charge: $" << svcCharge << endl;
-    cout << "Telephone charge: $" << telCharge << endl;
-    cout << "Total bill: $" << total << endl;
-
-    return 0;
+	cout << endl;
+	system("pause");
+	return 0;
 }
